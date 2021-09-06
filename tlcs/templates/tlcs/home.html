@@ -1,0 +1,123 @@
+{% extends 'tlcs/base.html' %}
+{% load static %}
+{% block body %}
+
+<!-- <link rel="stylesheet" href="{% static 'home.css' %}"> -->
+<style>
+    #id {
+        background: url("/static/20210820_165914.jpg");  
+    }  
+</style>
+<body>
+<div id="id">
+    <div class="container-fluid" style="background: rgba(1, 1, 1, 0.6);
+    background: -webkit-linear-gradient(right, rgba(1, 1, 1, 0.6), rgba(255, 1, 17, 0.6));
+    background: -moz-linear-gradient(right, rgba(1, 1, 1,0.5), rgba(255, 1, 17,0.5));
+    background: linear-gradient(to left, rgba(1, 1, 1, 1.0), rgba(255, 1, 17, 0.5));color:white">
+    <p style="text-align: right;" id="hello">hello</p>
+        <div class="row">
+          
+            <div class="col-md-7">
+               
+                <h1 class="text-capitalize mt-5 ml-5" style="font-family: 'Cinzel', serif;font-size:2.6178010471204187vw">welcome to your
+                    place!</h1>
+
+                <h2  class="text-capitalize mt-5 ml-5"
+                    style="color: #FFC312;font-family: 'Courgette', cursive;font-weight:bold;font-size:3.468586387434555vw">"
+                    our creativity</h2>
+                <h3 class="ml-5 sm-mt-5 " style="font-family: 'Courgette', cursive;font-size:3.468586387434555vw">Maintain's your
+                    Brand "
+                </h3>
+                <ul class="mt-4 text-capitalize ml-5" style="font-size: 1.3089005235602094vw">
+                    <li class="mb-1">experience holder team member's creative efforts.</li>
+                    <li class="mb-1">digital design is like painting. except the paint never dries.</li>
+                    <li class="mb-1">time value and smart work depend on your skill value.</li>
+                </ul>
+                <div style="display: flex;justify-content:center;align-items:center;width:50%;">
+                    <a href="{% url 'contact' %}"
+                        style="-webkit-border-radius: 50px 50px 50px 50px;
+                    border-radius: 50px 50px 50px 50px;font-size:21px;width:120px;background: rgba(244, 240, 246, 1.0);
+                    background: -webkit-linear-gradient(bottom right, rgba(244, 240, 246, 1.0), rgba(3, 117, 255, 1.0));
+                    background: -moz-linear-gradient(bottom right, rgba(244, 240, 246, 1.0), rgba(3, 117, 255, 1.0));
+                    background: linear-gradient(to top left, rgba(244, 240, 246, 1.0), rgba(3, 117, 255, 1.0));font-weight:bolder;font-size:1.37434554973822vw"
+                        class="btn btn-primary text-uppercase mb-5 mt-2">more</a>
+                </div>
+            </div>
+
+
+            <!-- <div class="col-md-4 mt-sm-0 mb-0 col-sm-5 pb-sm-0  pr-5"
+                style="display: flex;justify-content:center;align-items:center;flex-direction:column;">
+                <img src="{% static '20210816_150746.png' %}"  class="img-fluid" alt="">
+            </div> -->
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <!-- what we do section start from here -->
+    <div id="wwd" style="background-color: black;">
+        <div class="container " style="color: white;">
+            <h1 class="text-capitalize text-center pt-3 pb-5" style="font-size:  2.6178010471204187vw;">what we do ?</h1>
+            <div class="row ">
+                <div class="col-md-4"
+                    style="display: flex;justify-content:center;align-items:center;flex-direction:column">
+
+                    <p class="text-center " style="background-color: #FFC312; border-radius: 50px 50px 50px 50px;">
+                        <img src="{% static 'graphic-design.png' %}" alt="" width="100">
+                    </p>
+
+                    <P class="text-capitalize" style="font-size:  1.112565445026178vw;">
+                        <span style="font-size: 1.6361256544502618vw;font-weight:bold"> GRAPHIC DESIGN</span> <br>creative, unique,
+                        professional<br>& informative design for your brand
+                    </P>
+
+                </div>
+
+
+                <div class="col-md-4 mt-4"
+                    style="display: flex;justify-content:center;align-items:center;flex-direction:column">
+
+                    <p class="text-center" style="background-color: #FFC312; border-radius: 50px 50px 50px 50px;">
+                        <img src="{% static 'ux.png' %}" alt="" width="100">
+                    </p>
+
+                    <P class="text-capitalize " style="font-size:  1.112565445026178vw;">
+                        <span style="font-size:  1.6361256544502618vw;font-weight:bold"> WEB DESIGN</span><br>
+                        unique look for your user<br>business website & also <br>content.
+                    </P>
+                </div>
+
+
+                <div class="col-md-4 pt-4"
+                    style="display: flex;justify-content:center;align-items:center;flex-direction:column">
+
+                    <p class="text-center" style="background-color: #FFC312; border-radius: 50px 50px 50px 50px;">
+                        <img src="{% static 'world-wide-web.png' %}" alt="" width="100">
+                    </p>
+
+
+                    <P class="text-capitalize" style="font-size:  1.112565445026178vw;">
+                        <span style="font-size: 1.6361256544502618vw;font-weight:bold">WEB DEVELOPMENT</span><br>
+                        python (django framework)<br> payouts (static & dynamic) <br>front-end and back-end<br>
+                        development
+                    </P>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var time = setInterval( function t(){
+            var d = new Date();
+            document.getElementById("hello").innerHTML=d.toLocaleTimeString();
+        },1000)
+
+       
+    </script>
+</body>
+
+{% endblock body %}

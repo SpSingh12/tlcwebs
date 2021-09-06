@@ -1,0 +1,69 @@
+{% extends 'tlcs/base.html' %}
+{% load static %}
+{% block body %}
+
+<div id="project"  class="mb-0"
+    style="background: linear-gradient(90deg, rgba(251,45,0,0.981127485173757) 34%, rgba(3,2,2,1) 73%);color:white;">
+    <div class="container mb-0">
+        <h1 class="text-center text-capitalize  pt-4" style="font-size: 2.945026178010471vw">creatice graphic project</h1>
+        <div class="col mb-0">
+            <din class="col-12 mb-0">
+                <img src="{% static '20210819_181326.png' %}" class="img-fluid" alt="">
+            </din>
+        </div>
+    </div>
+</div>
+
+<!-- types of logo -->
+<div id="types" style="background-color: black;color:white">
+    <div class="container">
+        <h1 class="text-uppercase m-0 pt-4" style="font-size:2.6178010471204187vw">
+            types of logo -
+        </h1>
+      <div class="container">
+          <div class="row">
+              <div class="col-xs-5 offset-4">
+                <p style="color: red;font-size: 1.3089005235602094vw" class="m-0 text-center text-uppercase mt-4 mr-5 pl-4"><i
+                    class="fa fa-circle  pl-3 pr-1" aria-hidden="true"></i> we have mostly seven type of designs</p>
+   
+                <div style="font-size: 1.112565445026178vw;" class="pl-5 text-white text-justify">
+                    ✓ Monogram or Lattermark<br>
+                    ✓ Word Mark<br>
+                    ✓ Pictorial Mark<br>
+                    ✓ Abstract Logo<br>
+                    ✓ Moscots Logo<br>
+                    ✓ Combination Logo<br>
+                    ✓ The Emblem Logo<br>
+                </div>
+      
+              </div>
+          </div>
+      </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-5 offset-4">
+                    <p style="color: red;font-size: 1.3089005235602094vw ;"
+                        class="m-0 pl-4 text-center text-uppercase mt-4 mr-5"><i class="fa fa-circle  pl-3 pr-1"
+                            aria-hidden="true"></i>logo mock-ups</p>
+                    <div style="font-size: 1.112565445026178vw;" class="pl-5 text-white text-justify">
+                        ✓ Texture Effect<br>
+                        ✓ Light Mochup<br>
+                        ✓ 2d + Background<br>
+                        ✓ 3d + Background<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center py-4">
+
+            <a href="{% url 'project_two' %}" class="btn btn-outline-secondary text-center"
+                style="color: white;font-size: 1.4397905759162304vw">NEXT&#187;</a>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+{% endblock body %}

@@ -1,0 +1,77 @@
+{% extends 'tlcs/base.html' %}
+{% load static %}
+{% block body %}
+<style>
+    #photo{
+        background: url("/static/image_search_1628767535349.png");  
+    }
+</style>
+<body>
+
+    <div id="photo">
+        <div class="container-fluid"
+            style="background: rgba(1, 1, 1, 0.6);
+        background: -webkit-linear-gradient(right, rgba(1, 1, 1, 0.6), rgba(255, 1, 17, 0.8));
+        background: -moz-linear-gradient(right, rgba(1, 1, 1,0.5), rgba(255, 1, 17,0.8));
+        background: linear-gradient(to left, rgba(1, 1, 1, 1.0), rgba(255, 1, 17, 0.8));color:white;display:flex;justify-content:center;align-items:center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 offset-sm-1">
+                        <div class="card mt-5" style="width: 18rem;background:rgb(255, 0, 0);border:none">
+                            <img class="card-img-top" style="border: 5px solid white;" src="{% static 'lokesh.jpg' %}"
+                                alt="Card image cap">
+                            <div class="card-body text-center text-uppercase">
+                                <h5 class="card-title mb-0 pb-0" style="font-size:1.7670157068062826vw">lokesh sharma
+                                </h5>
+                                <p class="card-text ml-5 mb-0 pb-0" style="background: black;color:yellow;width:150px">
+                                    owner</p>
+                                <ul style="text-align: justify;font-size: 1.3089005235602094vw" class="ml-3">
+                                    <li><i class="fa fa-circle  pl-3 pr-1" aria-hidden="true"></i>creative leader</li>
+                                    <li><i class="fa fa-circle  pl-3 pr-1" aria-hidden="true"></i>marketer</li>
+                                    <li><i class="fa fa-circle  pl-3 pr-1" aria-hidden="true"></i>graphic designer</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-5 offset-sm-1">
+
+                        <div class="card mt-5" style="width: 21rem;background:rgba(255, 0, 0,1.0);border:none">
+                            <img class="card-img-top" src="{% static 'suryapratap.jpg' %}"
+                                style="border: 5px solid white;" height="225px" width="225px" alt="Card image cap">
+                            <div class="card-body text-center text-uppercase">
+                                <h5 class="card-title mb-0" style="font-size:1.7670157068062826vw">surya pratap
+                                    singh</h5>
+                                <p class="card-text ml-5 mb-0" style="background: black;color:yellow;width:150px">
+                                    developer</p>
+                                <ul style="text-align: justify;font-size: 1.3089005235602094vw" class="ml-3 pb-3">
+                                    <li><i class="fa fa-circle pl-3 pr-1" aria-hidden="true"></i>programming guru</li>
+                                    <li><i class="fa fa-circle  pl-3 pr-1" aria-hidden="true"></i>web developer</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="button" style="background-color: black;">
+       <div class="conainer text-center pt-5 pb-5" >
+           <button data-toggle="collapse" data-target="#demo" class="btn btn-primary text-uppercase">about us</button>
+
+        <div class="container" style="display: flex;justify-content:center">
+            <div id="demo" class="collapse text-white mt-3 text-justify">
+                ✓ We have a Creativity for your business.<br>
+                ✓ TLC GRAPHIC'S Value depends on team member's work efforts.<br>
+                ✓ Experienced Designer & Developer.<br>
+               </div>
+        </div>
+       </div>
+    </div>
+</body>
+
+
+{% endblock body %}

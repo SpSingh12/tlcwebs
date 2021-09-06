@@ -1,0 +1,64 @@
+{% extends 'tlcs/base.html' %}
+{% load static %}
+{% block body %}
+
+
+<body>
+
+    <div id="contact" style="background: linear-gradient(90deg, rgba(251,45,0,0.981127485173757) 34%, rgba(3,2,2,1) 73%);color:white">
+        <div class="container mt-0">
+            <h1 class="text-center text-uppercase pt-5 " style="font-weight: bolder;">contact us</h1>
+            <p class="text-center text-capitalize mb-5" style="color: yellow;">For mention our creativity in your business</p>
+            <div class="row pb-5">
+                <div class="col-12" style="box-shadow: -5px 6px 9px 1px rgba(0,0,0,0.51);
+                -webkit-box-shadow: -5px 6px 9px 1px rgba(0,0,0,0.51);
+                -moz-box-shadow: -5px 6px 9px 1px rgba(0,0,0,0.51);background-color: white;color:black">
+
+                    <form method="post" action="{% url 'contact' %}" class="pt-4" >
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="name">First Name</label>
+                            <input type="text" class="form-control form-control-sm" name='name' id="name" aria-describedby="name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lname">Last Name</label>
+                            <input type="text" class="form-control form-control-sm" name='lname' id="lname">
+                        </div>
+                        <div class="form-group">
+                            <label for="business_field">Business Field</label>
+                            <input type="text" class="form-control form-control-sm" name='business_field' id="business_field">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="phone" class="form-control form-control-sm" name='phone' id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control" name='email' id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea name="message" class="form-control form-control-sm" id="message" cols="10" rows="10"></textarea>
+                        </div>
+
+                        <div class="text-center pb-2">
+                            <input type="submit" class="btn btn-secondary" style="border-radius: 20px; font-size:22px">
+                        </div>
+
+                    </form>
+
+
+
+                </div>
+              
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
+
+{% endblock body %}
